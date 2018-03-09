@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 01</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="jumbotron mt-4">
+            <h1 class="display-4">Ejercicio 1.</h1>
+            <p class="lead">
+                A continuación, tienes preparada una ficha para que introduzcas los datos de 3 personas. Tendrás que introducir nombre, correo
+                y edad de cada persona. </br>Tendrás que ir al <b>fichero js/main.js</b> a realizar los métodos que se te
+                piden. Cuando hayas terminado, rellena los datos de las personas y pulsa el botón Iniciar para probar tus métodos y ver el resultado que
+                arrojan.
+            </p>
+            <hr class="my-4">
+
+            <div class="excercise-zone row ml-2" id="list">
+                <div class="card" style="width: 18rem;" id="first">
+                    <div class="card-header">
+                        Persona 1
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">Nombre</span>
+                                </div>
+                                <input type="text" class="form-control" name="name" placeholder="Nombre">
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">Correo</span>
+                                </div>
+                                <input type="text" class="form-control" name="email" placeholder="Correo">
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">Edad</span>
+                                </div>
+                                <input type="text" class="form-control" name="age" placeholder="Edad">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card" style="width: 18rem;" id="second">
+                    <div class="card-header">
+                        Persona 2
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">Nombre</span>
+                                </div>
+                                <input type="text" class="form-control" name="name" placeholder="Nombre">
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">Correo</span>
+                                </div>
+                                <input type="text" class="form-control" name="email" placeholder="Correo">
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">Edad</span>
+                                </div>
+                                <input type="text" class="form-control" name="age" placeholder="Edad">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card" style="width: 18rem;" id="third">
+                    <div class="card-header">
+                        Persona 3
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">Nombre</span>
+                                </div>
+                                <input type="text" class="form-control" name="name" placeholder="Nombre">
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">Correo</span>
+                                </div>
+                                <input type="text" class="form-control" name="email" placeholder="Correo">
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">Edad</span>
+                                </div>
+                                <input type="text" class="form-control" name="age" placeholder="Edad">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <p class="lead mt-3">
+                <a class="btn btn-primary btn-lg" href="#" onclick="iniciarTest()" role="button">Iniciar</a>
+            </p>
+
+            <hr class="my-4">
+            <div class="result-zone">
+                <div id="results">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/main.js"></script>
+    <script>
+        var firstPersonElement = document.getElementById('first');
+        var secondPersonElement = document.getElementById('second');
+        var thirdPersonElement = document.getElementById('third');
+        var resultsElement = document.getElementById('results');
+
+        function iniciarTest() {
+            var originalPerson1 = {
+                name: firstPersonElement.querySelector('[name="name"]').value ||  'No name',
+                age: firstPersonElement.querySelector('[name="age"]').value ||  0,
+                email: firstPersonElement.querySelector('[name="email"]').value ||  'pruebas@eoi.com',
+            }
+            var originalPerson2 = {
+                name: secondPersonElement.querySelector('[name="name"]').value ||  'No name',
+                age: secondPersonElement.querySelector('[name="age"]').value ||  0,
+                email: secondPersonElement.querySelector('[name="email"]').value ||  'pruebas@eoi.com',
+            }
+            var originalPerson3 = {
+                name: thirdPersonElement.querySelector('[name="name"]').value ||  'No name',
+                age: thirdPersonElement.querySelector('[name="age"]').value ||  0,
+                email: thirdPersonElement.querySelector('[name="email"]').value ||  'pruebas@eoi.com',
+            }
+
+            var copyP1 = Object.assign({}, originalPerson1);
+            var copyP2 = Object.assign({}, originalPerson2);
+            var copyP3 = Object.assign({}, originalPerson3);
+
+            var elMayor = quienEsMayorDeLosTres(copyP1, copyP2, copyP3);
+            var hayCorreoRepetido = hayAlgunCorreoRepetido(copyP1, copyP2, copyP3);
+            var usuarioViejo = elUsuarioEsMayorQueLosTres(copyP1, copyP2, copyP3);
+            var correosDeGmail = cuantosTienenCorreoDeGmailDotCom(copyP1, copyP2, copyP3);
+
+            showResults([{
+                    text: 'El mayor de los tres es ',
+                    value: elMayor
+                },
+                {
+                    text: hayCorreoRepetido? 'Hay correos repetidos': 'NO Hay correos repetidos' 
+                },
+                {
+                    text: usuarioViejo?'El usuario es mayor que las tres personas': 'El usuario NO es mayor que las tres personas'
+                },
+                {
+                    text: 'El número de correos acabados en gmail.com es ',
+                    value: correosDeGmail
+                }
+            ])
+        }
+
+
+        function showResults(results) {
+
+            var resultString = '';
+            results.forEach(function (result) {
+                resultString += '<p>' + result.text + '<b>' + (result.value || '') + '</b></p>';
+            });
+            resultsElement.innerHTML = resultString;
+            
+        }
+
+
+    </script>
+</body>
+
+</html>
