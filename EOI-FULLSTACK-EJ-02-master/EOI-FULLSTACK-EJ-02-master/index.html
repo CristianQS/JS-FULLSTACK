@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 01</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="ej-02-01-tab" data-toggle="tab" href="#ej-02-01" role="tab" aria-controls="ej-02-01" aria-selected="true">Ej-02-01</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="ej-02-02-tab" data-toggle="tab" href="#ej-02-02" role="tab" aria-controls="ej-02-02" aria-selected="false">Ej-02-02</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="ej-02-03-tab" data-toggle="tab" href="#ej-02-03" role="tab" aria-controls="ej-02-03" aria-selected="false">Ej-02-03</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="ej-02-04-tab" data-toggle="tab" href="#ej-02-04" role="tab" aria-controls="ej-02-04" aria-selected="false">Ej-02-04</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="ej-02-05-tab" data-toggle="tab" href="#ej-02-05" role="tab" aria-controls="ej-02-05" aria-selected="false">Ej-02-05</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="ej-02-06-tab" data-toggle="tab" href="#ej-02-06" role="tab" aria-controls="ej-02-06" aria-selected="false">Ej-02-06</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="ej-02-07-tab" data-toggle="tab" href="#ej-02-07" role="tab" aria-controls="ej-02-07" aria-selected="false">Ej-02-07</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="ej-02-01" role="tabpanel" aria-labelledby="ej-02-01-tab">
+
+                <div class="jumbotron mt-4">
+                    <h1 class="display-4">Ejercicio 1.</h1>
+                    <p class="lead">
+                        Implementa la función ejercicio01 para que devuelva true ó false en el caso de que el email introducido en el input sea o
+                        no alguno de los siguientes: yunior.developer@hotmail.com, miguel@mrbug.es ó imanol@mercadona.com.
+                    </p>
+                    <hr class="my-4">
+
+                    <div class="excercise-zone row ml-2">
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Correo</span>
+                            </div>
+                            <input type="text" class="form-control" name="email" placeholder="Correo">
+                        </div>
+                    </div>
+                    <p class="lead mt-3">
+                        <a class="btn btn-primary btn-lg" href="#" onclick="pruebaEjercicioType1('01')" role="button">Iniciar</a>
+                    </p>
+
+                    <hr class="my-4">
+                    <div class="result-zone">
+                        <div class="results">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="tab-pane fade" id="ej-02-02" role="tabpanel" aria-labelledby="ej-02-02-tab">
+
+                <div class="jumbotron mt-4">
+                    <h1 class="display-4">Ejercicio 2.</h1>
+                    <p class="lead">
+
+                        Implementa la función ejercicio02 para que devuelva la siguiente frase dependiendo del correo introducido:
+                        </br>
+                        "El correo [correo] tiene [24] caracteres y en mayúsculas se quedaría así [CORREO]. Además [no] contiene [ninguna/2] letras
+                        M"
+                    </p>
+                    <hr class="my-4">
+
+                    <div class="excercise-zone row ml-2" id="list">
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Correo</span>
+                            </div>
+                            <input type="text" class="form-control" name="email" placeholder="Correo">
+                        </div>
+                    </div>
+                    <p class="lead mt-3">
+                        <a class="btn btn-primary btn-lg" href="#" onclick="pruebaEjercicioType1('02')" role="button">Iniciar</a>
+                    </p>
+
+                    <hr class="my-4">
+                    <div class="result-zone">
+                        <div class="results">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="tab-pane fade" id="ej-02-03" role="tabpanel" aria-labelledby="ej-02-03-tab">
+
+                <div class="jumbotron mt-4">
+                    <h1 class="display-4">Ejercicio 3.</h1>
+                    <p class="lead">
+
+                        Implementa la función ejercicio03 para que devuelva la siguiente frase dependiendo del correo introducido:
+                        </br>
+                        "El correo [correo] pertenece al dominio [gmail.com] y tiene [X] caracteres sin contar el dominio ni el @. Además, el correo
+                        [no] contiene [ningún/X] número[s]"
+                    </p>
+                    <hr class="my-4">
+
+                    <div class="excercise-zone row ml-2" id="list">
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Correo</span>
+                            </div>
+                            <input type="text" class="form-control" name="email" placeholder="Correo">
+                        </div>
+                    </div>
+                    <p class="lead mt-3">
+                        <a class="btn btn-primary btn-lg" href="#" onclick="pruebaEjercicioType1('03')" role="button">Iniciar</a>
+                    </p>
+
+                    <hr class="my-4">
+                    <div class="result-zone">
+                        <div class="results">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="tab-pane fade" id="ej-02-04" role="tabpanel" aria-labelledby="ej-02-04-tab">
+
+                <div class="jumbotron mt-4">
+                    <h1 class="display-4">Ejercicio 4.</h1>
+                    <p class="lead">
+
+                        Implementa la función ejercicio04 para que devuelva la siguiente frase dependiendo de los datos de la persona introducida:
+                        </br>
+                        </br>
+                        "El usuario [nombre] [no] es mayor de edad"
+                        </br>
+                        </br>
+                        En caso de ser mayor de edad Añade al final de la frase lo siguiente :
+                        </br>
+                        </br>
+                        "Por lo tanto, le he creado un usuario con el correo[correo]"
+                    </p>
+                    <hr class="my-4">
+
+                    <div class="excercise-zone row ml-2" id="list">
+                        <div class="card" style="width: 18rem;" id="first">
+                            <div class="card-header">
+                                Persona
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon1">Nombre</span>
+                                        </div>
+                                        <input type="text" class="form-control" name="name" placeholder="Nombre">
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon1">Correo</span>
+                                        </div>
+                                        <input type="text" class="form-control" name="email" placeholder="Correo">
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon1">Edad</span>
+                                        </div>
+                                        <input type="text" class="form-control" name="age" placeholder="Edad">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="lead mt-3">
+                        <a class="btn btn-primary btn-lg" href="#" onclick="pruebaEjercicioType2('04')" role="button">Iniciar</a>
+                    </p>
+
+                    <hr class="my-4">
+                    <div class="result-zone">
+                        <div class="results">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="ej-02-05" role="tabpanel" aria-labelledby="ej-02-05-tab">
+
+                <div class="jumbotron mt-4">
+                    <h1 class="display-4">Ejercicio 5.</h1>
+                    <p class="lead">
+
+                        Implementa la función ejercicio05 para que devuelva alguna de las siguientes frases dependiendo de los datos de la persona
+                        introducida:
+                        </br>
+                        "La persona introducida no es Yunior"
+                        </br>
+                        "La persona introducida es Yunior"
+                        </br>
+                        "La persona introducida pudiera ser Yunior. Ya que tiene [el mismo correo / la misma edad / el mismo nombre]"
+
+                    </p>
+                    <hr class="my-4">
+
+                    <div class="excercise-zone row ml-2" id="list">
+                        <div class="card" style="width: 18rem;" id="first">
+                            <div class="card-header">
+                                Persona
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon1">Nombre</span>
+                                        </div>
+                                        <input type="text" class="form-control" name="name" placeholder="Nombre">
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon1">Correo</span>
+                                        </div>
+                                        <input type="text" class="form-control" name="email" placeholder="Correo">
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon1">Edad</span>
+                                        </div>
+                                        <input type="text" class="form-control" name="age" placeholder="Edad">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="lead mt-3">
+                        <a class="btn btn-primary btn-lg" href="#" onclick="pruebaEjercicioType2('05')" role="button">Iniciar</a>
+                    </p>
+
+                    <hr class="my-4">
+                    <div class="result-zone">
+                        <div class="results">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="ej-02-06" role="tabpanel" aria-labelledby="ej-02-06-tab">
+
+                <div class="jumbotron mt-4">
+                    <h1 class="display-4">Ejercicio 6.</h1>
+                    <p class="lead">
+                        <p class="mb-4">Para los datos de la persona introducida, implementa la función ejercicio06 para que haga lo siguiente:
+                        </p>
+                        <ul>
+                            <li>Valida que su nombre tiene mínimo 5 caracteres y un máximo de 60.</li>
+                            <li>Valida que su nombre solo contiene letras o espacios.</li>
+                            <li>Valida que su email tiene mínimo 7 caracteres y máximo 60.</li>
+                            <li>Valida que su email contiene un @ y contenido a la izquierda y a la derecha.</li>
+                            <li>Valida que edad es superior a los 5 años y menor de 150.</li>
+                        </ul>
+                        <p class="mt-2">
+                            La función devolverá un objeto con la siguiente forma :
+                        </p>
+                        <pre>
+                        { 
+                            <b> valid</b> : true/false,
+                            <b> errors?</b> : [
+                            {
+                                    <b>code</b> : 'email_invalid_min_length'
+                                    <b>text</b> : 'El correo [correo] debe contener más de 7 caracteres.'
+                            }, ...
+                            ]
+                        }
+                        </pre>
+                    </p>
+                    <hr class="my-4">
+
+                    <div class="excercise-zone row ml-2" id="list">
+                        <div class="card" style="width: 18rem;" id="first">
+                            <div class="card-header">
+                                Persona
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon1">Nombre</span>
+                                        </div>
+                                        <input type="text" class="form-control" name="name" placeholder="Nombre">
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon1">Correo</span>
+                                        </div>
+                                        <input type="text" class="form-control" name="email" placeholder="Correo">
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon1">Edad</span>
+                                        </div>
+                                        <input type="text" class="form-control" name="age" placeholder="Edad">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="lead mt-3">
+                        <a class="btn btn-primary btn-lg" href="#" onclick="pruebaEjercicioType3('06')" role="button">Iniciar</a>
+                    </p>
+
+                    <hr class="my-4">
+                    <div class="result-zone">
+                        <div class="results">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="ej-02-07" role="tabpanel" aria-labelledby="ej-02-07-tab">
+
+                <div class="jumbotron mt-4">
+                    <h1 class="display-4">Ejercicio 7.</h1>
+                    <p class="lead">
+
+                        <p class="mb-4">Para los datos de las personas introducidas, implementa la función ejercicio07 para que haga lo siguiente.
+                        </p>
+                        <p class="mb-4">Esta vez recibirás un array con las tres personas. Y tu función deberá de validar cada persona por
+                            separado. En caso de que sea un usuario válido por lo que hemos definido en el ejercicio06 entonces
+                            lo guardarás dentro de un array. Antes de guardarlo en el array, le crearás el atributo id :
+                            number con un identificador único para él (usa su posición en el array incrementada en 1). Una
+                            vez hayas introducido a los usuarios que eran válidos y comprobados los que no son válidos tu
+                            función deberá devolver un Objeto con la siguiente forma :
+                        </p>
+                        <pre>
+                            {
+                                <b>items_inserted </b> : number,
+                                <b>ids </b> : number[],
+                                <b>with_errors? </b> : [
+                                    {
+                                        
+                                    }, ...
+                                ],
+                                <b>users_stored </b> : user[] 
+                            }
+                        </pre>
+                        <p class="mt-3">
+                            De manera, que si pulsamos varias veces en el botón de iniciar con nuevos datos de personas, se irán mostran todos los nuevos
+                            usuarios .
+                        </p>
+
+                    </p>
+                    <hr class="my-4">
+
+                    <div class="excercise-zone row ml-2" id="list">
+                        <div class="card" style="width: 18rem;" id="first">
+                            <div class="card-header">
+                                Persona 1
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon1">Nombre</span>
+                                        </div>
+                                        <input type="text" class="form-control" name="name" placeholder="Nombre">
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon1">Correo</span>
+                                        </div>
+                                        <input type="text" class="form-control" name="email" placeholder="Correo">
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon1">Edad</span>
+                                        </div>
+                                        <input type="text" class="form-control" name="age" placeholder="Edad">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card" style="width: 18rem;" id="second">
+                            <div class="card-header">
+                                Persona 2
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon1">Nombre</span>
+                                        </div>
+                                        <input type="text" class="form-control" name="name" placeholder="Nombre">
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon1">Correo</span>
+                                        </div>
+                                        <input type="text" class="form-control" name="email" placeholder="Correo">
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon1">Edad</span>
+                                        </div>
+                                        <input type="text" class="form-control" name="age" placeholder="Edad">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card" style="width: 18rem;" id="third">
+                            <div class="card-header">
+                                Persona 3
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon1">Nombre</span>
+                                        </div>
+                                        <input type="text" class="form-control" name="name" placeholder="Nombre">
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon1">Correo</span>
+                                        </div>
+                                        <input type="text" class="form-control" name="email" placeholder="Correo">
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon1">Edad</span>
+                                        </div>
+                                        <input type="text" class="form-control" name="age" placeholder="Edad">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="lead mt-3">
+                        <a class="btn btn-primary btn-lg" href="#" onclick="pruebaEjercicioType3('07')" role="button">Iniciar</a>
+                    </p>
+
+                    <hr class="my-4">
+                    <div class="result-zone">
+                        <div class="results">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        function pruebaEjercicioType1(number) {
+
+            var email = document.querySelector('#ej-02-' + number + ' input[name="email"]').value;
+
+            var resultsZone = document.querySelector('#ej-02-' + number + ' .results');
+            var result;
+            if (number == '01') {
+                result = ejercicio01(email);
+            }
+            if (number == '02') {
+                result = ejercicio02(email);
+            }
+            if (number == '03') {
+                result = ejercicio03(email);
+            }
+
+            showResults([{
+                text: 'El resultado de la función ha sido : ',
+                value: result
+            }], resultsZone)
+        }
+
+        function pruebaEjercicioType2(number) {
+
+            var nombre = document.querySelector('#ej-02-' + number + ' input[name="name"]').value;
+            var correo = document.querySelector('#ej-02-' + number + ' input[name="email"]').value;
+            var edad = document.querySelector('#ej-02-' + number + ' input[name="age"]').value;
+
+            var persona = {
+                nombre: nombre,
+                edad: edad,
+                correo: correo
+            };
+
+            var resultsZone = document.querySelector('#ej-02-' + number + ' .results');
+            var result;
+            if (number == '04') {
+                result = ejercicio04(persona);
+            }
+            if (number == '05') {
+                result = ejercicio05(persona);
+            }
+
+            showResults([{
+                text: 'El resultado de la función ha sido : ',
+                value: result
+            }], resultsZone)
+        }
+
+        function pruebaEjercicioType3(number) {
+            var usuarios = [];
+            var items = [];
+            if (number == '06') {
+                items = ['first']
+            }
+            if (number == '07') {
+                items = ['first', 'second', 'third']
+            }
+
+            items.forEach(id => {
+
+                var nombre = document.querySelector('#ej-02-' + number + ' #' + id + ' input[name="name"]').value;
+                var correo = document.querySelector('#ej-02-' + number + ' #' + id + ' input[name="email"]').value;
+                var edad = document.querySelector('#ej-02-' + number + ' #' + id + ' input[name="age"]').value;
+
+                var persona = {
+                    nombre: nombre,
+                    edad: edad,
+                    correo: correo
+                };
+                usuarios.push(persona);
+            })
+
+
+            var resultsZone = document.querySelector('#ej-02-' + number + ' .results');
+            var result;
+            if (number == '06') {
+                result = ejercicio06(usuarios[0]);
+            }
+            if (number == '07') {
+                result = ejercicio07(usuarios);
+            }
+
+
+            showLastResults({
+                text: 'El resultado de la función es. </br>',
+                value:  result
+            }, resultsZone)
+        }
+
+
+        function showResults(results, zone) {
+
+            var resultString = '';
+            results.forEach(function (result) {
+                if (result.value === false) {
+                    resultString += '<p>' + result.text + '<b>' + 'false' + '</b></p>';
+                } else if (result.value === 0){
+                    resultString += '<p>' + result.text + '<b>' + '0' + '</b></p>';
+                }else {
+                    resultString += '<p>' + result.text + '<b>' + (result.value ||  '') + '</b></p>';
+                }
+            });
+            zone.innerHTML = resultString;
+
+        }
+        function showLastResults(results, zone) {
+
+            var resultString = '';
+            zone.innerHTML = 'El resultado está en la consola esta vez';
+            console.log('Tu resultado ha sido : ' , results.value);
+        }
+    </script>
+</body>
+
+</html>
