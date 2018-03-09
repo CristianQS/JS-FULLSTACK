@@ -3,8 +3,8 @@
 // Devuelve EL NOMBRE del mayor de los tres
 function quienEsMayorDeLosTres(p1, p2, p3) {
     var edad1 = parseInt(p1.age),
-    edad2 = parseInt(p2.age),
-    edad3 = parseInt(p3.age);
+        edad2 = parseInt(p2.age),
+        edad3 = parseInt(p3.age);
     if (edad1 && edad2 && edad3) {
         if (edad1 > edad2 && edad1 > edad3) {
             return p1.name;
@@ -13,7 +13,7 @@ function quienEsMayorDeLosTres(p1, p2, p3) {
         } else if (edad3 > edad2 && edad3 > edad1) {
             return p3.name;
         }else{
-            return "Hay nombres iguales"
+            return "Hay edades iguales"
         }
     }else {
         alert("La edad es con número")
