@@ -1,0 +1,54 @@
+[
+   {
+    "nombre": "RIU",
+    "comentarios": [{
+      "usuario": "Manolín Vega",
+      "comentario": "Estancia agradable",
+      "valoracion": 8.5
+    }, {
+      "usuario": "Orlando Florencio",
+      "comentario": "Bonito el sitio",
+      "valoracion": 7
+    }, {
+      "usuario": "Andrea Pérez",
+      "comentario": "Estancia inolvidable",
+      "valoracion": 10
+    }]
+  },
+  {
+    "nombre": "Nacho Sol",
+    "comentarios": [{
+      "usuario": "Floren Hi",
+      "comentario": "Un lugar para pensar en cryptos y mucho sol",
+      "valoracion": 10
+    }, {
+      "usuario": "Pedro García",
+      "comentario": "Decente tirando a bajo",
+      "valoracion": 4
+    }]
+  },
+  {
+    "nombre": "Hilton",
+    "comentarios": [{
+      "usuario": "Elena Ramírez",
+      "comentario": "Todo fantástico, acorde con el precio",
+      "valoracion": 10
+    }, {
+      "usuario": "Gustav Fransua",
+      "comentario": "Best sitio in the world",
+      "valoracion": 10
+    }, {
+      "usuario": "Francisco Paco",
+      "comentario": "Lo mejor la comida",
+      "valoracion": 9.5
+    }]
+  },
+  {
+    "nombre": "El desastrillo",
+    "comentarios": [{
+      "usuario": "Manolín Vega",
+      "comentario": "Chiquita porquería",
+      "valoracion": 3
+    }]
+  }
+]
