@@ -4,16 +4,44 @@ function addUser() {
     if (validaEmailRepetidos(user.correo)) {
         var userValidated = validarUsuario(user);
         if (userValidated.valid) {
-            array.push(user);
-            generateHtml(user);
+            saveUser(user);
+        } else {
+            showMessageError();
         }
     } else {
         alert("El correo se encuentra repetido");
     }
 }
+
+function saveUser (user) {
+    array.push(user);
+    saveUserLocalStorage(user);
+    generateHtml(user);
+}
+
+function showMessageError () {
+    $("#principal").append('<p id="error">Rellene los campos correctamente</p>');
+    setTimeout(showMessage, 3000);
+    setTimeout(removeMessage, 1000);
+}
+
+function saveUserLocalStorage() {
+    var userJSON = JSON.stringify(array);
+    localStorage.setItem('usuarios', userJSON);
+}
+
+function showMessage() {
+    $("#error").hide(3000);
+}
+
+function removeMessage() {
+    $("#error").remove();
+}
+
+
 function searchNames() {
     var nombre = $("input[name=searchText]").val();
-    if(nombre === "") return showAllCards();
+    if (nombre === "") return showAllCards();
     showAllCards();
     let noNameArray = array.filter(user => user.nombre != nombre);
     for (let i = 0; i < noNameArray.length; i++) {
